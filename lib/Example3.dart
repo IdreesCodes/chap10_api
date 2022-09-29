@@ -1,7 +1,6 @@
-/*
 import 'dart:convert';
 
-
+import 'package:chap10_api/Models/UserModel.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
@@ -57,7 +56,7 @@ class _ExampleThreeState extends State<ExampleThree> {
                                   ReuseableRow(title: 'name', value: snapshot.data![index].name.toString()),
                                   ReuseableRow(title: 'email', value: snapshot.data![index].email.toString()),
                                   ReuseableRow(title: 'username', value: snapshot.data![index].username.toString()),
-
+                                  ReuseableRow(title: 'Address', value: snapshot.data![index].address.city.toString()),
 
                                 ],
                               )
@@ -97,5 +96,3 @@ class ReuseableRow extends StatelessWidget {
   }
 }
 
-
- */
